@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA- Comaptible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ab619db19e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">My Skills</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi I'm,<br><span>Suryajit</span>,<br>CSE Student.</h1>
+                    <p>Welcome to my portfolio.</p>
+
+                </div>
+                <div class="scrolldown">
+                    <h1>Scroll down!</h1>
+                </div>
+            </div>
+
+        </div>
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="About-col-1">
+                        <img src="images/Suryajit_professional_minimalistic_business_line_logo_for_softw_9215d0c8-e757-43cf-bfef-cebf34fd0bf5.png">
+                    </div>
+                    <div class="About-col-2">
+                        <h2 class="sub-title ">About Me</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                            tincidunt sit amet sapien quis, elementum molestie tellus . Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem
+                            tristique, dictum sapien et, accumsan libero.Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem
+                            tristique, dictum sapien et, accumsan libero.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="column">
+                <h1 class="sub-title">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/tro.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>
+                                the app connects you to the talented people ariund the globe.
+                                Download the the app from play store.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/tro.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>
+                                the app connects you to the talented people ariund the globe.
+                                Download the the app from play store.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="work">
+                        <img src="images/tro.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>
+                                the app connects you to the talented people ariund the globe.
+                                Download the the app from play store.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contaier">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-sharp fa-regular fa-paper-plane"></i>vas20cs117@vidyaacademy.ac.in</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 80780 50655 </p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-square-github"></i></a>
+                            </div>
+                        <a href="" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required >
+                            <input type= "email" name="email" placeholder="Your Email" required >
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Suryajit </p>
+        </div>
+<script>
+    var tablinks = document . getElementsByClassName ( "tab-links") ;
+    var tabcontents =document.getElementsByClassName ("tab-contents") ;
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+    tablink.classList.remove("active-link") ;}
+    for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");}
+    event.currentTarget.classList.add("active-link") ;
+    document.getElementById(tabname).classList.add("active-tab") ;
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+    sidemenu.style.right = "0px";
+    }
+    function closemenu (){
+    sidemenu.style.right = "-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7CInm8YSsy9frUaxtcF-eGZh5EKNOHwGMRL8is_y-DaUz4j7mGsJWzVu3V2nWDTYDfQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
